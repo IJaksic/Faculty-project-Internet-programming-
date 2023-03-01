@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="hr">
+	<head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/stil.css" />
+        <title>Seminar</title>
+    </head>
+    
+    <body>
+         
+        <header>
+            <div class="container">
+                 <h2>Nissan Motor Company</h2>
+                  <div id="shopping" class="icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="shopping-count"></span>
+                    </div>
+                    <nav>
+                          <a class="link" href="#">Home</a>
+                          <a class="link" href="#vehicles">Vehicles</a>
+                          <a class="link" href="#prices">Prices</a>
+                          <a class="link" href="#contact">Contact</a>
+                    </nav>        
+            </div>
+        </header>
+
+        <main>
+            
+      <section id="shopping-side-menu">
+        <div id="shopping-items"></div>
+        <div id="total-price">
+          <span>Total price:</span>
+          <strong>0.00 $</strong>
+        </div>
+
+        <button id="order-btn" class="blue">Order</button>
+      </section> 
+          
+          <section id="banner">
+                <div class="container">
+                    <img src="./resursi/nissan-logo2.png" alt="Nissan logo" />
+                        <div class="text">
+                            <h1>Nissan Motor Company</h1>
+                            <span>Est. 1933</span>
+                            <button class="red">Order now</button>
+                        </div>
+                 </div>
+             </section>
+
+             <section id="vehicles">
+                    <h2>Vehicles</h2>
+                    <div class="container">
+                      <article class="car-list">
+                        <img src="./resursi/nissan-370z.png" alt="Nissan 370Z" />
+                        <h3>Nissan GTR</h3>
+                        <p>
+                            The rear-wheel-drive Nissan GTR is a two-seat sport car offered in coupe and
+                            roadster form. It's powered by a standard 332-horsepower, 3.7-liter V6 engine
+                            that works with a six-speed manual transmission or seven-speed automatic.
+                        </p>
+                        <small>Starting price: <em>30090$</em></small>
+                        <button class="blue">Order</button>
+                      </article>
+                      <article class="car-list">
+                        <img src="./resursi/nissan-micra.png" alt="Nissan Micra" />
+                        <h3>Nissan Micra</h3>
+                        <p>
+                            The Micra is a 5 seater hatchback and offers a diesel engine with 1461 cc or
+                            petrol engine with 1198 cc. It is available with manual and automatic transmission.
+                            Fuel tank capacity is a solid 41 liter.
+                        </p>
+                        <small>Starting price: <em>12560$</em></small>
+                        <button class="blue">Order</button>
+                      </article>
+                      <article class="car-list">
+                        <img src="./resursi/nissan-rouge.png" alt="Nissan Rogue" />
+                        <h3>Nissan Rogue</h3>
+                        <p>
+                            The Rogue is powered by a 170hp, 2.5 liter, four cylinder engine and comes with
+                            a four wheel drive. Both manual and automatic transmission are available. It offers
+                            slightly less passenger volume than its V6 powered sibling Nissan Murano
+                        </p>
+                        <small>Starting price: <em>25200$</em></small>
+                        <button class="blue">Order</button>
+                      </article>
+                    </div>
+                </section>
+
+                  <section id="prices">
+                        <h2>Prices</h2>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>Model</th>
+                              <th>Horsepower</th>
+                              <th>Price</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>GTR</td>
+                              <td>332HP</td>
+                              <td>30090$</td>
+                              <td>350HP</td>
+                              <td>34300$</td>
+                            </tr>
+                            <tr>
+                              <td>Micra</td>
+                              <td>109HP</td>
+                              <td>12560$</td>
+                              <td>120HP</td>
+                              <td>15000$</td>
+                            </tr>  
+                            <tr>
+                              <td>Rogue</td>
+                              <td>170HP</td>
+                              <td>25200$</td>
+                              <td>202HP</td>
+                              <td>31000$</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </section>
+
+                    <section id="contact">
+                        <h2>Contact Us</h2>
+                            <form>
+                              <div class="form-control">
+                                <label for="first name">First name</label>
+                                <input type="first name" name="first name" id="firstname" placeholder="First name..." />
+                              </div>
+
+                              <div class="form-control">
+                                  <label for="last name">Last name</label>
+                                  <input type="last name" name="last name" id="lastname" placeholder="Last name...">
+                              </div>
+
+                              <div class="form-control">
+                                  <label for="country">Country</label>
+                                  <select id="country">
+                                      <option value="croatia">Croatia</option>
+                                      <option value="usa">USA</option>
+                                      <option value="panama">Panama</option>
+                                      <option value="china">China</option>
+                                      <option value="russia">Russia</option>
+                                  </select>
+                              </div>
+                    
+                              <div class="form-control">
+                                <label for="title">Title</label>
+                                <input type="text" name="subject" id="title" placeholder="Mail title..." />
+                              </div>
+                    
+                              <div class="form-control">
+                                  <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Message..."></textarea>
+                              </div>
+                    
+                              <button class="blue" type="submit">Send</button>
+                            </form>
+                    </section>
+        </main>
+
+        <footer>
+                <ul id="social-icons">
+                        <li title="Facebook">
+                          <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                          </a>
+                        </li>
+                        <li title="Instagram">
+                          <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                          </a>
+                        </li>
+                        <li title="Email">
+                          <a href="mailto:myemail@mail.com">
+                            <i class="far fa-envelope"></i>
+                          </a>
+                        </li>
+                      </ul>
+                <h4>Nissan Motor Company "Innovation For All"</h4>
+                <p>
+                  &copy;<em>2020, All rights reserved</em>
+                  <br />
+                  <strong>Ivan Jakšić</strong>
+                </p>
+              </footer>
+
+              <script src="./js/script.js"></script>
+    </body>
